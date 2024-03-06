@@ -1,0 +1,122 @@
+body {
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size: cover;
+    background-image: url("../assets/images/background.png");
+    height: 800px;
+}
+
+h1 {
+    margin: auto;
+    margin-bottom: 50px;
+    width: fit-content;
+    align-items: center;
+}
+
+#sectionQuestion {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0px solid white;
+    border-radius: 30px;
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    padding: 30px;
+}
+
+#questionContainer {
+    background-color: chocolate;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: fit-content;
+    align-items: center;
+    border: 0px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reponseContainer {
+    background-color: chocolate;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.reponseContainer:hover {
+    transform: scale(1.2, 1.2);
+    background-color: white(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+#resultMessage {
+    background-color: chocolate;
+    padding: 20px;
+    align-items: center;
+    border: 0px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+
+}
+
+#resultMessage:hover {
+    background-color: white(0, 0, 0, 0);
+}
+
+.flex {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin: auto;
+    gap: 50px;
+}
+
+.flex p {
+    width: 100%;
+}
+
+.reponse-container {
+    width: 50%;
+    margin: auto;
+}
+
+
+.succes {
+    background-color: rgb(2, 251, 2);
+}
+
+.wrong {
+    background-color: red;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        height: 100vh
+    }
+
+    #questionContainer {
+        font-size: 20px;
+    }
+
+    .reponse-container {
+        font-size: 15px;
+    }
+}
